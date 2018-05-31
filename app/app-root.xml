@@ -1,2 +1,3 @@
-<Frame defaultPage="main-page">
+<!--Reference: https://discourse.nativescript.org/t/framemodule-topmost-in-the-nativescript-book-using-v4-0-0/5456/2 -->
+<Frame defaultPage="views/login/login" id="topmost">
 </Frame>

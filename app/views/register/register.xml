@@ -5,7 +5,6 @@
         <TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"/>
         <TextField hint="Password" secure="true"/>
 
-        <Button text="Sign in" tap="signIn"/>
-        <Button text="Sign up for Groceries" class="link" tap="register"/>
+        <Button text="Sign Up" tap="signUp"/>
     </StackLayout>
 </Page>
