@@ -25,5 +25,6 @@
     <orderEntry type="library" name="mocha-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="sinon-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="tsconfig$roots" level="project" />
+    <orderEntry type="library" name="@types/jest" level="application" />
   </component>
 </module>
