@@ -231,3 +231,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+# START - customized
+__mocks__/**/*.js
+# END - customized
