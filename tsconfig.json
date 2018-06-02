@@ -14,13 +14,18 @@
         "paths": {
             "~/*": [
                 "app/*"
-            ],
-            "*": [
-                "./node_modules/tns-core-modules/*",
-                "./node_modules/*"
             ]
+//            ],
+//            "*": [
+//                "./node_modules/tns-core-modules/*",
+//                "./node_modules/*"
+//            ]
         },
-        "types": ["jasmine", "jest"]
+        "types": [
+            "jasmine",
+            "chai",
+            "node"
+        ]
     },
     "exclude": [
         "node_modules",
