@@ -1,8 +1,8 @@
-import * as frameModule from "tns-core-modules/ui/frame";
+// import * as frameModule from "tns-core-modules/ui/frame";
 // const frameModule = require("tns-core-modules/ui/frame");
-// const frameModule = require("ui/frame");
-import * as observableModule from "tns-core-modules/data/observable";
-// const observableModule = require("data/observable");
+const frameModule = require("ui/frame");
+// import * as observableModule from "tns-core-modules/data/observable";
+const observableModule = require("data/observable");
 
 // const user = new observableModule.fromObject({
 //     email: "user@domain.com",

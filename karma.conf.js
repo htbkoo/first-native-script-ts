@@ -7,13 +7,13 @@ module.exports = function (config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['mocha', 'chai', 'karma-typescript'],
+        frameworks: ['mocha', 'chai', 'browserify'],
 
 
         // list of files / patterns to load in the browser
         files: [
+            'app/**/*.js',
             // 'app/**/*.ts',
-            'app/**/*.ts',
         ],
 
 
@@ -26,7 +26,9 @@ module.exports = function (config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            "app/**/*.ts": "karma-typescript" // *.tsx for React Jsx
+            "app/**/*.ts": "karma-typescript", // *.tsx for React Jsx
+            // "app/**/*.js": ["babel"],
+            "app/**/*.js": ['browserify'],
         },
 
 
