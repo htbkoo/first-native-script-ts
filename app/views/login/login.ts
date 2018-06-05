@@ -1,25 +1,30 @@
-const frameModule = require("ui/frame");
-const observableModule = require("data/observable");
+// import * as observableModule from "tns-core-modules/data/observable";
+// import * as frameModule from "tns-core-modules/ui/frame";
+import * as frameModule from "ui/frame/frame";
+import * as observableModule from "data/observable";
+// const frameModule = require("ui/frame");
+// const observableModule = require("data/observable");
 
-const user = new observableModule.fromObject({
+// const user = new observableModule.fromObject({
+const user = observableModule.fromObject({
     email: "user@domain.com",
     password: "password"
 });
 
 let page;
 
-exports.loaded = function (arg) {
+export function loaded(arg) {
     console.log("entered login page");
     page = arg.object;
     page.bindingContext = user;
-};
+}
 
-exports.signIn = function () {
+export function signIn() {
     let email = page.getViewById("email");
     alert(email.text);
-};
+}
 
-exports.register = function () {
+export function register() {
     const topmost = frameModule.getFrameById('topmost');
     topmost.navigate("views/register/register");
-};
+}
